@@ -85,6 +85,37 @@
             </li>
           </ul>
         </section>
+        <section>
+          <form action="/subscribe" method="POST">
+          <h3>Join for more info about Arknights</h3>
+          <p>Please enter your email and full name to subscribe.</p>
+            <!--Uses dirname for name input-->
+            <div class="form-group">
+              <label for="name">Full Name:</label>
+              <input 
+                type="text" 
+                id="name" 
+                name="user-name" 
+                dirname="user-name.dir" 
+                placeholder="e.g., Jane Doe"
+                required
+              >
+            </div>
+            <!--Uses dirname for email input-->
+            <div class="form-group">
+              <label for="email">Email Address:</label>
+              <input 
+                type="email" 
+                id="email" 
+                name="user-email" 
+                dirname="user-email.dir" 
+                placeholder="name@example.com"
+                required
+              >
+            </div>
+            <button type="submit">Subscribe</button>
+          </form>
+        </section>
       </article>
     </main>
     <footer role="contentinfo">
